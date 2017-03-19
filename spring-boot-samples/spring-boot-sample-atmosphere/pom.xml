@@ -86,5 +86,12 @@
       			<id>snapshots</id>
       			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
     		</snapshotRepository>
-  </distributionManagement>
+  	</distributionManagement>
+    <servers>
+    <server>
+      <id>nexus</id>
+      <username>deployment</username>
+      <password>deployment123</password>
+    </server>
+	</servers>
 </project>
