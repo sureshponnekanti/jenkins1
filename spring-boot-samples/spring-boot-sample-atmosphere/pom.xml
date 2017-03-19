@@ -95,9 +95,5 @@
       			<id>releases</id>
       			<url>http://35.154.212.66:8081/repository/vdev/</url>
     		</repository>
-    		<snapshotRepository>
-      			<id>snapshots</id>
-      			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
-    		</snapshotRepository>
   	</distributionManagement>
 </project>
