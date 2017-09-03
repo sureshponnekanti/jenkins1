@@ -1,4 +1,6 @@
-node {
+pipeline {
+    agent any
+   
    stage('checkout') {
        git 'https://github.com/Murail/jenkins.git'
    }
@@ -11,12 +13,11 @@ node {
    }
    stage('package'){
        
-       sh 'mvn package'
+       sh 'mvn package -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml'
        
    }
    stage('archieve artifacts'){
-       archiveArtifacts 'target/*.*ar'
-       sdjg
-       
+       archiveArtifacts '-f spring-boot-samples/spring-boot-sample-atmosphere/target/*.*ar'
+              
    }
 }
