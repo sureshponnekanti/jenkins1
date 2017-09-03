@@ -1,5 +1,4 @@
-pipeline {
-    agent any
+node {
    
    stage('checkout') {
        git 'https://github.com/Murail/jenkins.git'
